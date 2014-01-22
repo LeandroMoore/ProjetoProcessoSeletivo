@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ProjetoProcessoSeletivo.NhibernateMappingFiles.Categoria,ProjetoProcessoSeletivo" table="Categoria" lazy = "false">
+
+    <id name="IdCategoria" column="idCategoria" type="Int64" unsaved-value="0">
+      <generator class="assigned"/>
+    </id>
+    <property column="DescricaoCategoria" type="String" name="DescricaoCategoria" not-null="true" length="150" />
+    <property column="idCategoriaPai" type="Int64" name="IdCategoriaPai" />
+
+  </class>
+</hibernate-mapping>

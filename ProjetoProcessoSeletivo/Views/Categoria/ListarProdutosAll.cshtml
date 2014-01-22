@@ -1,0 +1,28 @@
+﻿@model ProjetoProcessoSeletivo.Controllers.CategoriaController
+
+<fieldset>
+    <legend>Procurar</legend>
+</fieldset>
+
+<div>
+
+    @using(Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+    }
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.GeProdutoCategoriaId("1"))
+    </div>
+    
+    <table>
+        <tr>
+            <td>
+                Descrição Categoria :
+            </td>
+            <td>
+
+
+            </td>
+        </tr>
+    </table>
+</div>
